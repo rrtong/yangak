@@ -5,16 +5,17 @@ import "../styles/Home.css";
 
 const Home = (props) => {
   return (
-    <div>
+    <div className="home">
       <h1>yangak</h1>
-      <Button
+      <button
+        className="home-button"
         onClick={() => {
           props.setShowHome(false);
           props.setShowQuiz(true);
         }}
       >
         Faker
-      </Button>
+      </button>
     </div>
   );
 };

@@ -1,0 +1,21 @@
+.home {
+  text-align: center;
+}
+
+.home-button {
+  font-family: "Oswald", serif;
+  font-size: 3em;
+  color: white;
+  font-weight: bolder;
+  background-image: url(../assets/fakerpog.png);
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  background-position: center center;
+  transition: 0.2s;
+}
+
+.home-button:hover {
+  text-shadow: 5px 5px 2px black;
+  filter: brightness(1.05);
+}
