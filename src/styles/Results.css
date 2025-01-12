@@ -1,0 +1,21 @@
+.results {
+  text-align: center;
+}
+
+.results-home {
+  font-family: "Oswald", serif;
+  font-size: 2em;
+  background-color: darkseagreen;
+  color: white;
+  font-weight: bolder;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  background-position: center center;
+  transition: 0.2s;
+}
+
+.results-home:hover {
+  text-shadow: 5px 5px 2px black;
+  filter: brightness(1.05);
+}

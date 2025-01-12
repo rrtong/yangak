@@ -9,14 +9,26 @@ function App() {
   const [showHome, setShowHome] = useState(true);
   const [showQuiz, setShowQuiz] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [resultsTitle, setResultsTitle] = useState();
+  const [resultsImage, setResultsImage] = useState();
   return (
     <div className="app">
       {showHome && <Home setShowHome={setShowHome} setShowQuiz={setShowQuiz} />}
       {showQuiz && (
-        <Faker setShowQuiz={setShowQuiz} setShowResults={setShowResults} />
+        <Faker
+          setShowQuiz={setShowQuiz}
+          setShowResults={setShowResults}
+          setResultsTitle={setResultsTitle}
+          setResultsImage={setResultsImage}
+        />
       )}
       {showResults && (
-        <Results setShowResults={setShowResults} setShowHome={setShowHome} />
+        <Results
+          resultsTitle={resultsTitle}
+          resultsImage={resultsImage}
+          setShowResults={setShowResults}
+          setShowHome={setShowHome}
+        />
       )}
     </div>
   );

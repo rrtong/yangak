@@ -1,18 +1,21 @@
 import React from "react";
-import faker from "../assets/fakerpog.png";
+import "../styles/Results.css";
 
 const Results = (props) => {
   return (
-    <div>
-      <h1>omgg u r fakr</h1>
-      <img src={faker} alt="omgfaker" />;
+    <div className="results">
+      <h1>{props.resultsTitle}</h1>
+      <img src={props.resultsImage} alt="omgfaker" />
+      <br />
+      <br />
       <button
+        className="results-home"
         onClick={() => {
           props.setShowResults(false);
           props.setShowHome(true);
         }}
       >
-        go home
+        another quiz?
       </button>
     </div>
   );
